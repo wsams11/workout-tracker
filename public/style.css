@@ -1,0 +1,206 @@
+body {
+    background-color : black;  
+}
+
+.label{
+    color: white;
+}
+
+
+
+.logo {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    color: white;   
+   font-size: 50px;
+}
+.newEx{
+    font-family: 'Padauk', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.timeNow{
+    color:white;
+    letter-spacing: 0.5px;
+    
+}
+
+
+.resistenceContainer{
+    margin-left: 450px;
+}
+
+
+.btnAdd {
+
+    display: inline-block;
+    /* border-radius: 65%; */
+     width: 100px;
+    height: 80px;     
+    /* box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.616); */
+    transition: .6s;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5px;    
+    background-color: #dddddd;    
+    text-decoration: none;
+    font-family: 'Padauk', sans-serif;
+    border-bottom: solid 3px #c5c3c3;
+    font-size: 15px;        
+    opacity: 0.5;
+    letter-spacing: 1.0px;
+    color:white;
+    /* text-shadow: 1px 1px 2px s; */
+
+}
+
+.small{
+    color: white;
+}
+
+.recentBtn {
+    
+
+    border-radius: 20px;
+    width: 80px;       
+    text-align: center;
+    vertical-align: middle;
+    background-color: red;      
+    text-decoration: none;
+    /* font-family: 'Padauk', sans-serif;   */
+    font-size: 16px;      
+    margin-right: 5px;
+    letter-spacing: 0.5px;
+    border: 2px gray ;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px;
+    /* text-shadow: 1px 2px 2px silver; */
+    /* box-shadow: 0px 2px 4px rgba(78, 77, 77, 0.616); */
+}
+
+
+.addNew{
+    color: white;
+}
+
+
+input{
+    list-style: none;
+    text-decoration: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.616);
+   
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+
+.closeIcon {
+    font-size: 25px;
+    color: white;
+}
+.succesModal{
+    font-size: 25px;
+    margin-left:auto; 
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5;
+    color: red;
+    
+}
+
+
+
+.recentTitle{
+    font-size: 25px;
+    font-family: 'Padauk', sans-serif;      
+    font-weight: lighter;
+    color: white;
+    margin-top: 0 auto;
+   
+
+}
+.hide {
+    display: none;
+}
+
+.centerDiv{
+  align-content: center;
+}
+
+
+
+#resistanceComplete{
+    background-color:  red; 
+
+    color: white;
+    letter-spacing: 0.5;
+    font-weight: bolder;
+    align-content: center !important;
+    border: none;
+    letter-spacing: 1px;
+}
+
+#updateResistance {
+
+    background-color:  red;   
+
+    color: white;
+    letter-spacing: 0.5;
+    font-weight: bolder;
+    align-content: center !important;
+    border: none;
+    letter-spacing: 1px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .resistenceContainer{
+        margin: 0;
+     }
+     
+     .cardioContainer{
+        margin: 0;
+     }
+     
+     form {
+        width: 100%;
+        margin-left: auto;
+      }
+
+ }
+
+
+@media screen and (max-width: 576px) { 
+
+    .resistenceContainer{
+       margin: auto;
+    }
+    
+    .cardioContainer{
+       margin: auto;
+    }
+    
+    
+form {
+    width: 100%;
+    margin-left: auto;
+  }
+.logo{
+    font-size: 40px;
+}
+.divRecents{
+    display: none;
+}
+  
+.btnAdd{
+    margin-top: 5px;
+}
+}
+
+

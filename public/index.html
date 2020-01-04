@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9b22d73af0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Workout Tracker</title>
+</head>
+
+<body>
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+
+                            <p class="succesModal align-center">Good Job!</p>
+                        </div>
+                        <div class="col">
+                            <i class="fas fa-times btn closeIcon" data-dismiss="modal"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class=" container ">
+
+
+
+
+
+
+
+        <div class="row">
+
+            <div class="col-3 text-right my-5 divRecents">
+
+                <small class="recentTitle">Recent Workouts</small>
+                <div class="allWorkouts"></div>
+            </div>
+            <div class="col-md-9 text-center">
+                <h2 class="logo my-2"> Workout Tracker </h2>
+                <p class="timeNow"></p>
+
+                </p>
+                <div class="row">
+                    
+                    <div class="col my-3 ">
+                        <a class="btn btnAdd btnResistence " href="#" role="button" id="showAll " aria-haspopup="true"
+                            aria-expanded="false">
+                            <small>new</small>
+                            Workout
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class=" container hide resistenceContainer">
+
+
+                <div class="col-12 text-align">
+                    <form class="create-form formResistance">
+
+                        <div class="  text-align center col-md-6 col-sm-12">
+                            <label for="exName">Exercise Name:</label>
+                            <input type="text " class="form-control" name="exName" id="exName">
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12">
+                            <label for="weights">Weights(lbs):</label>
+
+
+                            <input type="number" class="form-control" name="quantity" min="1" max="200" name="weights"
+                                id="weights">
+
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12">
+                            <label for="sets">Sets:</label>
+                            <input class="form-control  " id="sets" type="text">
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12">
+
+                            <label for="reps">Reps:</label>
+                            <input class="form-control " id="reps" type="text">
+                        </div>
+
+                        <div class="col-md-6 col-sm-12">
+                            <label for="duration">Duration(minutes):</label>
+                            <input class="form-control " id="duration" type="text">
+                        </div>
+
+
+                        <div class="col-md-6  col-sm-12">
+                            <div class="row my-2">
+                                <div class="col-md-12 ">
+                                    <button class=" form-control " data-toggle="modal" data-target="#myModal "
+                                        id="resistanceComplete">Submit</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+
+</body>
+
+</html>
