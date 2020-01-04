@@ -4,11 +4,13 @@ This app is created for anyone that needs help with tracking workout information
  
 ## SCREENSHOTS
 
-![HomePage](homepage.png)
+![HomePage](images/homepage.png)
 
-![Workout Tracker Form](workout-tracker-form.png)
+![Workout Tracker Form](images/workout-tracker-form.png)
 
-![Mobile Workout Tracker](mobileview.png)
+![Mobile Workout Tracker](images/mobileview.png)
+
+![Mobile Workout Tracker](images/mobileview2.png)
 
 
 ## TECH / FRAMEWORK USED
