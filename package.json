@@ -19,7 +19,7 @@
   "homepage": "https://github.com/wsams11/workout-tracker#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "handlebars": "^4.5.3",
     "mongodb": "^3.4.1",
     "mongoose": "^5.7.14",
